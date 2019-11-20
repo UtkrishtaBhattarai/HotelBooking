@@ -35,24 +35,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Thread background = new Thread() {
-            public void run() {
-                try {
-                    // Thread will sleep for 5 seconds
-                    sleep(5*1000);
-
-                    // After 5 seconds redirect to another intent
-                   // Intent i=new Intent(getBaseContext(),FirstScreen.class);
-                  //  startActivity(i);
-
-                    //Remove activity
-                    finish();
-                } catch (Exception e) {
-                }
-            }
-        };
-        // start thread
-        background.start();
         spinlocation = findViewById(R.id.spinlocation);
         spinroom = findViewById(R.id.spinroom);
         totalsuite = findViewById(R.id.totalsuite);
@@ -156,21 +138,21 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (TextUtils.isEmpty(tvkids.getText())) {
+               else if (TextUtils.isEmpty(tvkids.getText())) {
                     tverr.setText("Please enter number of Kids ");
                     return;
                 }
-                if (TextUtils.isEmpty(tvadult.getText())) {
+                else if (TextUtils.isEmpty(tvadult.getText())) {
                     tverr.setText("Please enter number of adults ");
                     return;
                 }
 
-                if (TextUtils.isEmpty(tvoutdate.getText())) {
+                else if (TextUtils.isEmpty(tvoutdate.getText())) {
                     tverr.setText("Please enter Checked out Date ");
                     return;
                 }
 
-                if (TextUtils.isEmpty(tvroom.getText())) {
+                else if (TextUtils.isEmpty(tvroom.getText())) {
                     tverr.setText("Please enter Number of Rooms ");
                     return;
                 }
