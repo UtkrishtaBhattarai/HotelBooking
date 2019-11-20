@@ -7,18 +7,101 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/spinlocation"
+        android:text="Check In Date"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         />
 
     <Spinner
+        android:id="@+id/spinroom"
+        android:text="Check In Date"
+        android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinroom"
         />
 
-    
+    <Button
+    android:id="@+id/simpledatepicker1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+    <Button
+        android:id="@+id/simpledatepicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/spinnercheckoutdate"
+        android:text="Check Out Date"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/tvindate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:hint="Adults"
+            android:inputType="number"
+            android:textColor="#f00"></EditText>
+
+        <EditText
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:hint="Child"
+            android:inputType="number"
+            android:textColor="#f00"></EditText>
+
+        <EditText
+            android:id="@+id/TextView03"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:hint="Room"
+            android:inputType="number"
+            android:textColor="#f00"></EditText>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="30dp"
+        android:id="@+id/btncalc"/>
+
 
 </LinearLayout>
