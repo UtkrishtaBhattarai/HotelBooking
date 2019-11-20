@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 long millis2 = cal2.getTimeInMillis();
                 long diff = millis2 - millis1;
                 long diffDays = (diff / (86400000));
+
                 no_of_room = Integer.parseInt(tvroom.getText().toString());
                 double price;
                 double Total_Price;
