@@ -10,55 +10,29 @@
 
     <Spinner
         android:id="@+id/spinlocation"
-        android:text="Check In Date"
-        android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:text="Check In Date"
+        android:textSize="30dp" />
 
     <Spinner
         android:id="@+id/spinroom"
-        android:text="Check In Date"
-        android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:text="Check In Date"
+        android:textSize="30dp" />
 
     <Button
-    android:id="@+id/simpledatepicker1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    />
+        android:id="@+id/simpledatepicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check In date" />
 
     <Button
         android:id="@+id/simpledatepicker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       />
-
-
-
-
-
-
-    <Spinner
-        android:id="@+id/spinnercheckoutdate"
-        android:text="Check Out Date"
-        android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-
-
-    <TextView
-        android:id="@+id/tvindate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/tvoutdate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="check out date" />
 
     <LinearLayout
         android:id="@+id/relative"
@@ -67,41 +41,115 @@
         android:padding="5dp">
 
         <EditText
-            android:id="@+id/TextView01"
+            android:id="@+id/tvadult"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/listPreferredItemHeight"
             android:layout_weight="1"
             android:hint="Adults"
             android:inputType="number"
-            android:textColor="#f00"></EditText>
+            android:textAlignment="center"
+            android:textColor="#f00"
+            android:textSize="25dp"></EditText>
 
         <EditText
-            android:id="@+id/TextView02"
+            android:id="@+id/tvkids"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/listPreferredItemHeight"
             android:layout_alignParentLeft="true"
             android:layout_weight="1"
             android:hint="Child"
             android:inputType="number"
-            android:textColor="#f00"></EditText>
+            android:textAlignment="center"
+            android:textColor="#f00"
+            android:textSize="25dp"></EditText>
 
         <EditText
-            android:id="@+id/TextView03"
+            android:id="@+id/tvroom"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/listPreferredItemHeight"
             android:layout_alignParentRight="true"
             android:layout_weight="1"
             android:hint="Room"
             android:inputType="number"
-            android:textColor="#f00"></EditText>
+            android:textAlignment="center"
+            android:textColor="#f00"
+            android:textSize="25dp"></EditText>
+
     </LinearLayout>
 
     <Button
+        android:id="@+id/btncalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tverr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Billing Details"
+        android:textAlignment="center"
         android:textSize="30dp"
-        android:id="@+id/btncalc"/>
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvindate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvdayofstay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvroomno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/totalsuite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/tvVat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
 
 
 </LinearLayout>
